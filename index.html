@@ -11,8 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+    <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Raleway:wght@400;700&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -22,10 +25,11 @@
   </style>
 </head>
 <body>
+
   <header class="header" >
     <a href=""><img class="logo" src="images/logo.svg" alt=""></a>
     <div class="nav">
-      <a href="">  Features</a>
+      <a href="#">  Features</a>
       <a href="">  Team</a>
       <a href="">  Sign In</a>
     </div>
@@ -34,27 +38,29 @@
   <section class="fylo">
     <div class="box">
       <img src="images/illustration-intro.png" alt="">
-      <h3> All your files in one secure location, accessible anywhere.</h3>
-      <p> Fylo stores all your most important files in one secure location. Access them wherever 
+      <div class="text">
+        <h3> All your files in one secure location, accessible anywhere.</h3>
+        <p> Fylo stores all your most important files in one secure location. Access them wherever 
         you need, share and collaborate with friends family, and co-workers.</p>
+      </div>
       <button> Get Started</button>
     </div>
   </section>
 
   <section class="home">
-  <div class="feature">
-    <div class="content">
-    <div class="box">
-      <img src="images/icon-access-anywhere.svg" alt="">
-      <h3> Access your files, anywhere</h3>
-      <p>The ability to use a smartphone, tablet, or computer to access your account means your 
-        files follow you everywhere.</p>
-    </div>
+    <div class="feature">
+      <div class="content">
+        <div class="box">
+          <img src="images/icon-access-anywhere.svg" alt="">
+          <h3> Access your files, anywhere</h3>
+          <p>The ability to use a smartphone, tablet, or computer to access your account means your 
+          files follow you everywhere.</p>
+        </div>
 
     <div class="box">
       <img src="images/icon-security.svg" alt="">
       <h3> Security you can trust</h3>
-      <p>  2-factor authentication and user-controlled encryption are just a couple of the security 
+      <p>  factor authentication and user-controlled encryption are just a couple of the security 
         features we allow to help secure your files.</p>
     </div>
 
@@ -120,8 +126,8 @@
     </div>
 
 
-    <div class="box">
-      <p>    Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+    <div class="box last">
+      <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
         become a well-oiled collaboration machine.</p>
       <div class="info">
         <img src="images/profile-2.jpg" alt="">
@@ -191,25 +197,6 @@
   </div>
 
 </section>
-<!-- 
 
-
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-  dolore magna aliqua
-
-  +1-543-123-4567
-  example@fylo.com
-
-
-
-y -->
-
-  <!-- <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer> -->
 </body>
 </html>
