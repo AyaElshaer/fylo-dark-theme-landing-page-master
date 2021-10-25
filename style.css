@@ -4,7 +4,8 @@
 }
 
 body{
-    background: url('images/bg-curvy-desktop.svg') ,hsl(217, 28%, 15%);
+    background: url(images/bg-curvy-desktop.svg),hsl(217, 28%, 15%);
+    background-color:hsl(217, 28%, 15%) ;
     background-repeat: no-repeat;
     background-position-y: 23% ;
     background-clip: 100%;
@@ -19,8 +20,8 @@ body{
 
 .header{
     display: flex;
-    justify-content: space-between;
-    margin:3rem 5rem;
+    justify-content: space-around;
+    margin:3rem 1rem;
     align-items: center;
     
 }
@@ -31,7 +32,7 @@ body{
 .header .nav a{
     font-size: 14px;
     color: var(--white);
-    margin-left: 3rem;
+    margin: 5rem 2rem;
     text-decoration: none;
 }
 .header .nav a:hover{
@@ -42,9 +43,13 @@ body{
 .fylo{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    margin: 5rem;
+    margin: 5rem ;
+}
+.fylo .box{
+    margin: 2rem auto;
 }
 .fylo img{
     width: 35rem;
@@ -72,9 +77,34 @@ body{
     padding: 1rem 2rem;
     width: 12rem;
 }
+
+/* @media (min-width: 375px)and (max-width: px){
+
+    
+    .fylo img {
+        width: 20rem;
+        height: 15rem;
+    }
+    .fylo .text {
+        width: 20rem;
+    }
+    .fylo .text h3 {
+        font-size: 23px;
+    }
+    .fylo .text p {
+        font-size: 15px;
+        padding: 0px 31px;
+    }
+    .feature .content {
+        grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));   
+    }
+    .feature .content .box p {
+        padding: 0px 1rem;
+    }
+}*/
 @media (max-width: 767px) {
-    .header {
-        margin: 3rem 2rem;
+    .header{
+        margin:3rem 1rem;
     }
     .header .nav a{
         margin-left: 1rem;   
@@ -93,7 +123,7 @@ body{
     .fylo .text{
      width: 30rem;
     }
-}
+} 
 .home{
     background:  hsl(218, 28%, 13%);
     margin: 0; 
@@ -169,7 +199,8 @@ body{
     display: flex;
     color: hsl(176, 68%, 64%);
     border-bottom: 1px solid hsl(176, 68%, 64%) ;
-    margin-right: 25rem;
+    /* margin-right: 25rem; */
+    width: 50%;
     padding: 0px;
 }
 .productive .content .work img{
@@ -182,13 +213,11 @@ body{
         width: 80%;
         height:100% ;
     }
-    .productive .content .work{
-        margin-right: 23rem;
-    }
     .productive .content h3{
         font-size: 1.5rem;
     }
 }
+
 .team{
     display: grid;
     grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
@@ -282,6 +311,10 @@ body{
     font-size: 0.8rem;
 }
 @media (max-width: 767px) {
+    .home{
+        width:50rem
+    }
+
     .team .box{
         margin-bottom: 3rem;
     }
@@ -314,6 +347,7 @@ body{
     font-family: 'Poppins', sans-serif;
     padding: 4rem ;
     padding-top: 16rem;
+  
 }
 .footer .logo {
     flex:1 1 100%
@@ -355,6 +389,7 @@ body{
         text-align: center;
     }
 }
+
 
 /* @media(min-width:992px){
     .footer{
@@ -406,7 +441,21 @@ body{
         width: 98%;
     }
 } */
-/* @media (min-width: 768px) and (max-width : 991px) {
+@media (min-width: 768px) and (max-width : 991px) {
+    body{
+        background: hsl(218, 28%, 13%);
+    }
+    .header{
+        margin: 20px 5px;
+    }
+    .home{
+        width:30rem
+    }
+    .feature .content{
+      
+        grid-template-columns: repeat(auto-fill , minmax(500px , 1fr));
+ 
+    }
     .productive {
         display: grid;
         grid-template-columns: repeat(auto-fill , minmax(800px , 1fr));
@@ -429,11 +478,10 @@ body{
     .team div:nth-child(3){
         margin-bottom: 28rem;
     }
-    .start{
-        width: 60%;
-        right: 17%;
-        top: 91%;   
-    }
+    .start {
+        right: -21%;
+        }
+
     .start div form{
         flex-direction: column;
         justify-content: center;
@@ -448,8 +496,9 @@ body{
     .footer{
         display: grid;
         grid-template-columns: repeat(1 , 1fr);
+        width: 100%;
     }
     .footer .icon{
         text-align: center;
     }
-} */
+}
